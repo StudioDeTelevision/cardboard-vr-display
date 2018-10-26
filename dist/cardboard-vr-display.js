@@ -819,10 +819,6 @@ function CardboardDistorter(gl, cardboardUI, bufferScale, dirtySubmitFrameBindin
   this.realColorMask = gl.colorMask;
   this.realClearColor = gl.clearColor;
   this.realViewport = gl.viewport;
-  if (!isIOS()) {
-    this.realCanvasWidth = Object.getOwnPropertyDescriptor(gl.canvas.__proto__, 'width');
-    this.realCanvasHeight = Object.getOwnPropertyDescriptor(gl.canvas.__proto__, 'height');
-  }
   this.isPatched = false;
   this.lastBoundFramebuffer = null;
   this.cullFace = false;
