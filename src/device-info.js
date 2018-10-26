@@ -107,6 +107,7 @@ DeviceInfo.prototype.setViewer = function(viewer) {
 DeviceInfo.prototype.determineDevice_ = function(deviceParams) {
   if (!deviceParams) {
     // No parameters, so use a default.
+    
     if (Util.isIOS()) {
       console.warn('Using fallback iOS device measurements.');
       return DEFAULT_IOS;

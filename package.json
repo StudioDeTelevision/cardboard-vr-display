@@ -38,6 +38,7 @@
     "url": "https://github.com/immersive-web/cardboard-vr-display/issues"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "gl-preserve-state": "^1.0.0",
     "nosleep.js": "^0.7.0",
     "webvr-polyfill-dpdb": "^1.0.10"
